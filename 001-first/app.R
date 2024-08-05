@@ -16,9 +16,9 @@ library(shinythemes)
 
 
 # Definindo a UI
-ui <- fluidPage(theme = shinytheme("cerulean"),
+ui <- fluidPage(theme = shinytheme("superhero"),
                 navbarPage(
-                  # theme = "cerulean",  # <--- To use a theme, uncomment this
+                  # opçōes de themes: https://rstudio.github.io/shinythemes/
                   "Minha primeira app",
                   tabPanel("Menu 1",
                            sidebarPanel(
@@ -40,7 +40,7 @@ ui <- fluidPage(theme = shinytheme("cerulean"),
                   tabPanel("Menu 3", "Este painel está igualmente em branco")
                   
                 ) # Página de navegacao
-) # fluidPage
+) # fluidPage (front-end)
 
 
 # Função de navegação 
@@ -49,8 +49,8 @@ server <- function(input, output) {
   output$txtout <- renderText({
     paste( input$txt1, input$txt2, sep = " " )
   })
-} # server
+} # servidor (back-end)
 
 
-# Create Shiny object
+# Objecto em Shiny
 shinyApp(ui = ui, server = server)
