@@ -1,6 +1,6 @@
 ####################################
 # Júlio Rafael                    #
-# http://github.com/juliomrafal   #
+# http://github.com/juliomrafael   #
 ####################################
 
 # Modificado a partir de Winston Chang e Data Professor
