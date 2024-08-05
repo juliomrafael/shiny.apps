@@ -30,7 +30,7 @@ ui <- fluidPage(theme = shinytheme("superhero"),
                            mainPanel(
                              h1("Cabeçalho 1"),
                              
-                             h4("Output 1"),
+                             h4("Saida 1:"),
                              verbatimTextOutput("txtout"),
                              
                            ) # painel Principal
