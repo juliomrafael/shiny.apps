@@ -94,7 +94,7 @@ server<- function(input, output, session) {
     }
   })
   
-  # Tabela de resultado da predicção
+  # Tabela de resultado da predição
   output$tabledata <- renderTable({
     if (input$submitbutton>0) { 
       isolate(datasetInput()) 
